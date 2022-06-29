@@ -32,7 +32,7 @@
   crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Roboto+Mono|Roboto+Slab" rel="stylesheet" type="text/css" />
 
-<link href="./ujet_url3_bundle.css" rel="stylesheet"></head>
+<link href="./ujet_url_bundle.css" rel="stylesheet"></head>
 <body class="loading UJET-menu-push">
  
 <div id="outer-wrap" class="outer-frame l-full-width-small" role="document">
@@ -86,9 +86,20 @@
 -->
 
     <div class="form-full l-clearfix">
-<span class="label-lp inline-block text-16px ptb-10px l-clearfix">Campaign Name</span>
+<span class="label-lp inline-block text-16px pb-10px l-clearfix">Campaign Name <br>(utm_campaign)</span>
 <input name="utm_campaign" type="text" id="campaign_name2" class="lowercase underscore">
     </div>
+
+    <div class="form-full l-clearfix">
+      <span class="label-lp inline-block text-16px ptb-10px l-clearfix">utm_asset</span>
+      <input name="utm_asset" type="text" id="utm_asset2" class="lowercase underscore float-none mb-5px">
+      <span class="small-text2 text-12px block ml-10px"> ( Amy needs to provide the value for utm_asset. )</span>
+   </div>
+  
+          <div class="form-full l-clearfix">
+            <span class="label-lp inline-block text-16px ptb-10px l-clearfix">utm_term</span>
+            <input name="utm_term" type="text" id="utm_term2" class="lowercase underscore">
+                </div>
 
     <!--
     <div class="form-full l-clearfix">
@@ -104,6 +115,11 @@
         </input>
         <input name="utm_campaign" id="ca-campaign2">
         </input>
+        <input name="utm_asset" id="re-utm_asset2">
+        </input>
+        <input name="utm_term" id="re-utm_term2">
+      </input>
+
         <input name="utm_medium" id="ca-medium" value="social">
         </input>
         <input name="ca-email" id="ca-campaign-email" value="email">
@@ -279,10 +295,21 @@
     </div>
     
     <div class="form-full l-clearfix">
-        <span class="label-lp inline-block text-16px ptb-10px l-clearfix">Campaign Name</span>
+        <span class="label-lp inline-block text-16px pb-10px l-clearfix">Campaign Name <br>(utm_campaign)</span>
         <input name="utm_campaign" type="text" id="campaign_name" class="lowercase underscore float-none mb-5px" />
         <span class="small-text2 text-12px block ml-10px">( ex) ccc_buyers_guide, dest_crm_ccc_solutions,.. etc. Please create a custom name. Simpler names are better. )</span>
     </div>
+
+    <div class="form-full l-clearfix">
+      <span class="label-lp inline-block text-16px ptb-10px l-clearfix">utm_asset</span>
+      <input name="utm_asset" type="text" id="utm_asset" class="lowercase underscore float-none mb-5px" />
+      <span class="small-text2 text-12px block ml-10px"> ( Amy needs to provide the value for utm_asset. )</span>
+  </div>
+
+  <div class="form-full l-clearfix">
+    <span class="label-lp inline-block text-16px ptb-10px l-clearfix">utm_term</span>
+    <input name="utm_term" type="text" id="utm_term" class="lowercase underscore float-none mb-5px" />
+</div>
 
     <div class="form-full l-clearfix mb-10px">
 
@@ -366,6 +393,13 @@
         </span>
             <span id="ca-campaign">
         </span>
+        <span id="re-utm_asset">
+        </span>
+        <span id="re-utm_term">
+        </span>
+
+
+
             <span id="ca-content">
         </span>
         <span id="ca-cls">
@@ -409,5 +443,5 @@
 
 
 
-<script type="text/javascript" src="./url3.bundle.e7a9dd8fbce94f1a9b67.js"></script></body>
+<script type="text/javascript" src="./url.bundle.39376cb4ce3de3efcfe0.js"></script></body>
 </html>

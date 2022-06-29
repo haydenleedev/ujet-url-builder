@@ -32,7 +32,7 @@
   crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Roboto+Mono|Roboto+Slab" rel="stylesheet" type="text/css" />
 
-<link href="ujet_url2_bundle.css" rel="stylesheet"></head>
+<link href="./ujet_url2_bundle.css" rel="stylesheet"></head>
 <body class="loading UJET-menu-push">
  
 <div id="outer-wrap" class="outer-frame l-full-width-small" role="document">
@@ -54,9 +54,9 @@
          
 <div class="l-full-width">
 <article id="main-content" class="l-site-width splash-theme-padding">
-  <h1 class="text-32px text-300 mb-30px l-align-center">UJET UTM Parameter Generator </h1>
+  <h1 class="text-32px text-300 mb-30px l-align-center">UJET UTM Parameter Generator </h1> 
 
-  <a href="https://datastudio.google.com/embed/u/1/reporting/9f6b90d3-d5c8-4daa-a23e-0d15fd140ccc/page/uPyuB" target="_blank" class="text-underline text-060e97 block mb-10px">-&gt; Click here to view the archived campaign parameters &amp; URLs</a> 
+  <a href="https://datastudio.google.com/embed/u/1/reporting/9f6b90d3-d5c8-4daa-a23e-0d15fd140ccc/page/uPyuB" target="_blank" class="text-underline text-060e97 block mb-10px">-&gt; Click here to view the archived campaign parameters &amp; URLs</a>
   <p>All of the entered input values are automatically recorded to the data as an archive. Please keep in mind that the recording occurs when you copy the url from the generated url field such as "facebook", "likedin", or "Campaign URL" field.</p>
 
   <section class="bg-f6f6f6 l-site-width" id="section1">
@@ -80,10 +80,21 @@
       <span class="small-text2 text-12px block ml-10px">( ex) CCC Buyers Guide,.. etc. Please enter an asset name. )</span>
   </div>
 
-    <div class="form-full l-clearfix">
-<span class="label-lp inline-block text-16px ptb-10px l-clearfix">Campaign Name</span>
-<input name="utm_campaign" type="text" id="campaign_name2" class="lowercase underscore">
-    </div>
+  <div class="form-full l-clearfix">
+    <span class="label-lp inline-block text-16px pb-10px l-clearfix">Campaign Name <br>(utm_campaign)</span>
+    <input name="utm_campaign" type="text" id="campaign_name2" class="lowercase underscore">
+        </div>
+    
+        <div class="form-full l-clearfix">
+          <span class="label-lp inline-block text-16px ptb-10px l-clearfix">utm_asset</span>
+          <input name="utm_asset" type="text" id="utm_asset2" class="lowercase underscore float-none mb-5px">
+          <span class="small-text2 text-12px block ml-10px"> ( Amy needs to provide the value for utm_asset. )</span>
+       </div>
+      
+              <div class="form-full l-clearfix">
+                <span class="label-lp inline-block text-16px ptb-10px l-clearfix">utm_term</span>
+                <input name="utm_term" type="text" id="utm_term2" class="lowercase underscore">
+                    </div>
 
     <!--
     <div class="form-full l-clearfix">
@@ -148,6 +159,10 @@
         </input>
         <input name="utm_campaign" id="ca-campaign2">
         </input>
+        <input name="utm_asset" id="re-utm_asset2">
+        </input>
+        <input name="utm_term" id="re-utm_term2">
+      </input>
         <input name="utm_medium" id="ca-medium" value="social">
         </input>
         <input name="ca-facebook" id="ca-campaign-fa" value="facebook">
@@ -155,6 +170,8 @@
         <input name="ca-linkedin" id="ca-campaign-li" value="linkedin">
         </input>
         <input name="ca-twitter" id="ca-campaign-tw" value="twitter">
+        </input>
+        <input name="ca-instagram" id="ca-campaign-in" value="instagram">
         </input>
         <input name="ca-youtube" id="ca-campaign-yu" value="youtube">
         </input>
@@ -188,6 +205,11 @@
     <span class="mr-20px text-500">Twitter: </span>
       <textarea name="Final_URL" id="twitter-result-final" class="all-text" readonly> </textarea>
     </div>
+
+    <div class="social-wrap mb-20px l-clearfix">
+      <span class="mr-20px text-500">Instagram: </span>
+      <textarea name="Final_URL" id="instagram-result-final" class="all-text" readonly> </textarea>
+  </div>
 
     <div class="social-wrap mb-20px l-clearfix">
         <span class="mr-20px text-500">YouTube: </span>
@@ -237,9 +259,20 @@
 </div>
 
   <div class="form-full l-clearfix">
-<span class="label-lp inline-block text-16px ptb-10px l-clearfix">Campaign Name</span>
+<span class="label-lp inline-block text-16px pb-10px l-clearfix">Campaign Name <br>(utm_campaign)</span>
 <input name="utm_campaign" type="text" id="campaign_name-ad" class="lowercase underscore">
   </div> 
+
+  <div class="form-full l-clearfix">
+    <span class="label-lp inline-block text-16px ptb-10px l-clearfix">utm_asset</span>
+    <input name="utm_asset" type="text" id="utm_asset-ad" class="lowercase underscore float-none mb-5px">
+    <span class="small-text2 text-12px block ml-10px"> ( Amy needs to provide the value for utm_asset. )</span>
+ </div>
+
+        <div class="form-full l-clearfix">
+          <span class="label-lp inline-block text-16px ptb-10px l-clearfix">utm_term</span>
+          <input name="utm_term" type="text" id="utm_term-ad" class="lowercase underscore">
+              </div>
 
 <div class="form-full l-clearfix bg-ffffff p-30px mb-60px">
   <p>* Use this URL in Google Paid Ad or Linkedin Paid Ad. </p>
@@ -248,6 +281,11 @@
     <input name="Page_URL" id="page-url-ad">
         </input>
       <input name="utm_campaign" id="ca-campaign-ad">
+
+      <input name="utm_asset" id="re-utm_asset-ad">
+        </input>
+        <input name="utm_term" id="re-utm_term-ad">
+      </input>
       
       <input name="utm_medium" id="ca-medium-ad" value="cpc">
       
@@ -335,10 +373,21 @@
     </div>
     
     <div class="form-full l-clearfix">
-        <span class="label-lp inline-block text-16px ptb-10px l-clearfix">Campaign Name</span>
-        <input name="utm_campaign" type="text" id="campaign_name" class="lowercase underscore float-none mb-5px" />
-        <span class="small-text2 text-12px block ml-10px">( ex) ccc_buyers_guide, dest_crm_ccc_solutions,.. etc. Please create a custom name. Simpler names are better. )</span>
-    </div>
+      <span class="label-lp inline-block text-16px pb-10px l-clearfix">Campaign Name <br>(utm_campaign)</span>
+      <input name="utm_campaign" type="text" id="campaign_name" class="lowercase underscore float-none mb-5px" />
+      <span class="small-text2 text-12px block ml-10px">( ex) ccc_buyers_guide, dest_crm_ccc_solutions,.. etc. Please create a custom name. Simpler names are better. )</span>
+  </div>
+
+  <div class="form-full l-clearfix">
+    <span class="label-lp inline-block text-16px ptb-10px l-clearfix">utm_asset</span>
+    <input name="utm_asset" type="text" id="utm_asset" class="lowercase underscore float-none mb-5px" />
+    <span class="small-text2 text-12px block ml-10px"> ( Amy needs to provide the value for utm_asset. )</span>
+</div>
+
+<div class="form-full l-clearfix">
+  <span class="label-lp inline-block text-16px ptb-10px l-clearfix">utm_term</span>
+  <input name="utm_term" type="text" id="utm_term" class="lowercase underscore float-none mb-5px" />
+</div>
 
     <div class="form-full l-clearfix mb-10px">
 
@@ -432,6 +481,10 @@
         </span>
             <span id="ca-campaign">
         </span>
+        <span id="re-utm_asset">
+        </span>
+        <span id="re-utm_term">
+        </span>
             <span id="ca-content">
         </span>
         <span id="ca-cls">
@@ -476,5 +529,5 @@
 
 
 
-<script type="text/javascript" src="url2.bundle.705ff4ad5849e4ff09b7.js"></script></body>
+<script type="text/javascript" src="./url2.bundle.4bbfbe82449e81828e46.js"></script></body>
 </html>
